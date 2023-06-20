@@ -2,9 +2,25 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\PagesController;
+
+// Route::get('/',[PagesController::class => 'index']);
+// Route::get('/products', [ProductsController::class , 'index'])->name('products');
+
+// dùng hàm where để tiến hành vadidate cho variable trên URL 
+// Route::get('/products/{id}', [ProductsController::class, 'detail'])->where(['id' =>'[0-9]']);       
+
+// Route::get('/products/{productName}/{id}', 
+// [
+//     ProductsController::class,
+//     'detail'
+//     ])->where([
+//         'productName' =>'[a-zA-Z0-9]+',
+//         'id'=>'[0-9]',
 
 
-Route::get('products', [ProductsController::class , 'index']);
+
+// ]);  
 
 
 // Route::get('/', function () {
